@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="海遊ツアーでは海の魅力を存分に味わっていただくために、アクティビティを通して海を体験していただくプランとクルーザーで海を満喫していただくプランの2つをご用意しております。家族や仲間と一緒にお楽しみください！"
+    />
+    <title>海遊ツアー</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header__logo">
+        <a href="index.html" class="header__logo-link">
+          <img src="img/logo.svg" alt="海遊ツアー" class="header__logo-img" />
+        </a>
+      </h1>
+      <nav
+        class="header__nav"
+        id="global-nav"
+        aria-label="グローバルナビゲーション"
+      >
+        <div class="header__nav-inner">
+          <ul class="header__nav-list header__nav-list--primary">
+            <li class="header__nav-item header__nav-item--primary">
+              <a
+                href="#about"
+                class="header__nav-link header__nav-link--primary"
+                >海遊ツアーとは</a
+              >
+            </li>
+            <li class="header__nav-item header__nav-item--primary">
+              <a
+                href="#introduction"
+                class="header__nav-link header__nav-link--primary"
+                >ツアー紹介</a
+              >
+            </li>
+            <li class="header__nav-item header__nav-item--primary">
+              <a
+                href="#activity"
+                class="header__nav-link header__nav-link--primary"
+                >アクティビティ</a
+              >
+            </li>
+            <li class="header__nav-item header__nav-item--primary">
+              <a href="#map" class="header__nav-link header__nav-link--primary"
+                >マップ</a
+              >
+            </li>
+          </ul>
+          <ul class="header__nav-list header__nav-list--cta">
+            <li class="header__nav-item">
+              <a href="#" class="c-button">
+                <img src="img/icon-arrow.svg" alt="" class="c-button__icon" />
+                お問い合わせはこちら
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="c-button">
+                <img src="img/icon-arrow.svg" alt="" class="c-button__icon" />
+                ご予約はこちら
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <button
+        class="header__hamburger"
+        aria-label="メニュー"
+        aria-expanded="false"
+        aria-controls="global-nav"
+      >
+        <span class="header__hamburger-line"></span>
+        <span class="header__hamburger-line"></span>
+      </button>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- MainVisual -->
+      <div class="mainvisual">
+        <picture class="mainvisual__media">
+          <source srcset="img/mainvisual-sp.jpg" media="(max-width: 767px)" />
+          <img
+            src="img/mainvisual-pc.jpg"
+            alt="クルーザーと海辺の建造物が見える風景"
+            class="mainvisual__image"
+          />
+        </picture>
+        <div class="mainvisual__decoration">
+          <img
+            src="img/wave-bottom.png"
+            alt=""
+            class="mainvisual__decoration-image"
+          />
+        </div>
+      </div>
+      <!-- About -->
+      <div class="about" id="about">
+        <div class="about__body">
+          <p class="about__lead">海で遊ぼう！</p>
+          <p class="about__text">
+            海には魅力がたくさんあります。<br />
+            海遊ツアーでは、<br />
+            そんな海の魅力をみな様に体験してもらうために、<br />
+            2つのプランをご用意いたしました。<br />
+            アクティビティを通して海を体験していただくプランと<br />
+            クルーザーに乗って海を満喫していただくプランです。<br />
+            家族や仲間と一緒に、<br />
+            海遊ツアーを楽しんでください！
+          </p>
+        </div>
+        <div class="about__media">
+          <picture class="about__picture">
+            <source srcset="img/about-img-sp.svg" media="(max-width: 767px)" />
+            <img src="img/about-img-pc.svg" alt="" class="about__image" />
+          </picture>
+        </div>
+      </div>
+      <!-- Parallax -->
+      <div class="parallax">
+        <div class="parallax__wave parallax__wave--top">
+          <img src="img/wave-top.png" alt="" class="parallax__image" />
+        </div>
+        <div class="parallax__wave parallax__wave--bottom">
+          <img src="img/wave-bottom.png" alt="" class="parallax__image" />
+        </div>
+      </div>
+      <!-- Introduction -->
+      <section class="introduction l-wrapper" id="introduction">
+        <h2 class="c-section-title">
+          <span class="c-section-title__text">ツアー体験</span>
+          <span class="c-section-title__icon">
+            <img
+              src="img/icon-wave.svg"
+              class="c-section-title__icon-image"
+              alt=""
+            />
+          </span>
+        </h2>
+        <div class="introduction__list">
+          <div class="introduction__item">
+            <div class="introduction__image">
+              <img
+                src="img/introduction-img1.jpg"
+                loading="lazy"
+                alt="海でシュノーケリングを楽しむ様子"
+              />
+            </div>
+            <div class="introduction__content">
+              <h3 class="introduction__heading">
+                <img
+                  src="img/introduction-title1.svg"
+                  alt=""
+                  class="introduction__heading-icon"
+                />
+                <span class="introduction__heading-text">海を体験する</span>
+              </h3>
+              <p class="introduction__text">
+                様々なアクティビティを通して海を体験するプランです。グラスボート、バナナボート、シュノーケリング、イルカウォッチング、ビーチヨガ、海街散策など、お好きなアクティビティからお選びいただけます。海と触れ合い素敵な休日を満喫してください！
+              </p>
+              <div class="introduction__more">続きを読む</div>
+            </div>
+          </div>
+          <div class="introduction__item introduction__item--reverse">
+            <div class="introduction__image">
+              <img
+                src="img/introduction-img2.jpg"
+                loading="lazy"
+                alt="海上を走るクルーザー"
+              />
+            </div>
+            <div class="introduction__content">
+              <h3 class="introduction__heading">
+                <img
+                  src="img/introduction-title2.svg"
+                  alt=""
+                  class="introduction__heading-icon"
+                />
+                <span class="introduction__heading-text">クルーザーで巡る</span>
+              </h3>
+              <p class="introduction__text">
+                豪華なクルーザーで終日海をクルージングできます。美しい海を360度見渡せるクルーザーで快適な海の旅を満喫してください。コースは時間に合わせて自由に変更できますのでご予約時にお申し付けください。
+              </p>
+              <div class="introduction__more">続きを読む</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Reservation -->
+      <section class="reservation">
+        <div class="reservation__wave reservation__wave--top">
+          <img
+            src="img/wave2-top.png"
+            alt=""
+            class="reservation__wave-image reservation__wave-image--top"
+          />
+        </div>
+        <p class="reservation__text">＼　海遊ツアーで海を満喫しよう！　／</p>
+        <a href="" class="c-button c-button--reservation">
+          <img
+            src="img/icon-arrow.svg"
+            alt=""
+            class="c-button__icon"
+          />ご予約はこちら
+        </a>
+        <div class="reservation__wave reservation__wave--bottom">
+          <img
+            src="img/wave2-bottom.png"
+            alt=""
+            class="reservation__wave-image reservation__wave-image--bottom"
+          />
+        </div>
+      </section>
+      <!-- Activity -->
+      <div class="activity" id="activity">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="activity__image">
+                <img
+                  src="img/activity1.jpg"
+                  class="activity__img"
+                  loading="lazy"
+                  alt="海中でスキューバダイビングをするダイバー"
+                />
+              </div>
+              <p class="activity__title">スキューバダイビング</p>
+              <p class="activity__text">
+                海の世界を間近で体感！<br />魚やウミガメと一緒に泳ごう！
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <div class="activity__image">
+                <img
+                  src="img/activity2.jpg"
+                  loading="lazy"
+                  class="activity__img"
+                  alt="海辺でヨガをする人たち"
+                />
+              </div>
+              <p class="activity__title">ビーチヨガ</p>
+              <p class="activity__text">
+                広々とした海を眺めながら<br />大自然のエネルギーを感じよう！
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <div class="activity__image">
+                <img
+                  src="img/activity3.jpg"
+                  class="activity__img"
+                  loading="lazy"
+                  alt="クルーザーでのクルージング風景"
+                />
+              </div>
+              <p class="activity__title">クルージング</p>
+              <p class="activity__text">
+                クルージングで<br />海と空の開放感を味わおう！
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <div class="activity__image">
+                <img
+                  src="img/activity4.jpg"
+                  class="activity__img"
+                  loading="lazy"
+                  alt="海辺に並ぶ2艘のボート"
+                />
+              </div>
+              <p class="activity__title">ボート</p>
+              <p class="activity__text">
+                水しぶきを浴びながら<br />海の上を走り抜けよう！
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <div class="activity__image">
+                <img
+                  src="img/activity5.jpg"
+                  class="activity__img"
+                  loading="lazy"
+                  alt="海でSUP（サップ）を楽しむ様子"
+                />
+              </div>
+              <p class="activity__title">SUP（サップ）</p>
+              <p class="activity__text">
+                初心者の方でも安心。<br />大人から子供まで楽しめます！
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <div class="activity__image">
+                <img
+                  src="img/activity6.jpg"
+                  class="activity__img"
+                  loading="lazy"
+                  alt="船からイルカを観察する様子"
+                />
+              </div>
+              <p class="activity__title">イルカウォッチング</p>
+              <p class="activity__text">
+                野生のイルカに癒されよう！<br />イルカウォッチングで感動体験！
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <div class="activity__image">
+                <img
+                  src="img/activity7.jpg"
+                  class="activity__img"
+                  loading="lazy"
+                  alt="海で釣りを楽しむ人の様子"
+                />
+              </div>
+              <p class="activity__title">海釣り</p>
+              <p class="activity__text">
+                釣れた時の爽快感は最高！<br />釣った魚をその場で味わおう！
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <div class="activity__image">
+                <img
+                  src="img/activity8.jpg"
+                  class="activity__img"
+                  loading="lazy"
+                  alt="海を走る水上バイク"
+                />
+              </div>
+              <p class="activity__title">水上バイク</p>
+              <p class="activity__text">
+                海の上を走りまわって<br />爽快感とスピード感を味わおう！
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Map -->
+      <section class="map" id="map">
+        <div class="map__wave map__wave--top">
+          <img src="img/wave-top.png" alt="" />
+        </div>
+        <h2 class="c-section-title">
+          <span class="c-section-title__text">アクティビティMAP</span>
+          <span class="c-section-title__icon">
+            <img
+              src="img/icon-wave.svg"
+              class="c-section-title__icon-image"
+              alt=""
+            />
+          </span>
+        </h2>
+        <p class="map__lead">
+          海遊ツアーのアクティビティスポットです。<br />
+          気になるアクティビティをチェックしてみよう！
+        </p>
+        <div class="map__body l-wrapper">
+          <picture class="map__image">
+            <source srcset="img/map-sp.svg" media="(max-width: 767px)" />
+            <img src="img/map-pc.svg" loading="lazy" alt="" />
+          </picture>
+          <div class="spot spot--1">
+            <div class="spot__button">スキューバダイビング</div>
+            <div class="spot__image">
+              <img
+                src="img/activity1.jpg"
+                class="spot__img"
+                loading="lazy"
+                alt="海中でスキューバダイビングをするダイバー"
+              />
+            </div>
+          </div>
+          <div class="spot spot--2">
+            <div class="spot__button">イルカウォッチング</div>
+            <div class="spot__image">
+              <img
+                src="img/activity2.jpg"
+                class="spot__img"
+                loading="lazy"
+                alt="船からイルカを観察する様子"
+              />
+            </div>
+          </div>
+          <div class="spot spot--3">
+            <div class="spot__button">ビーチヨガ</div>
+            <div class="spot__image">
+              <img
+                src="img/activity3.jpg"
+                class="spot__img"
+                loading="lazy"
+                alt="海辺でヨガをする人たち"
+              />
+            </div>
+          </div>
+          <div class="spot spot--4">
+            <div class="spot__button">水上バイク</div>
+            <div class="spot__image">
+              <img
+                src="img/activity4.jpg"
+                class="spot__img"
+                loading="lazy"
+                alt="海を走る水上バイク"
+              />
+            </div>
+          </div>
+          <div class="spot spot--5">
+            <div class="spot__button">クルージング</div>
+            <div class="spot__image">
+              <img
+                src="img/activity5.jpg"
+                class="spot__img"
+                loading="lazy"
+                alt="クルーザーでのクルージング風景"
+              />
+            </div>
+          </div>
+          <ul class="map__list">
+            <li class="map__list-item">
+              <p class="map__list-title">
+                <span class="map__list-number">1</span>
+                スキューバダイビング
+              </p>
+              <img
+                src="img/activity1.jpg"
+                class="map__list-image"
+                loading="lazy"
+                alt="海中でスキューバダイビングをするダイバー"
+              />
+            </li>
+            <li class="map__list-item">
+              <p class="map__list-title">
+                <span class="map__list-number">2</span>
+                イルカウォッチング
+              </p>
+              <img
+                src="img/activity2.jpg"
+                class="map__list-image"
+                loading="lazy"
+                alt="船からイルカを観察する様子"
+              />
+            </li>
+            <li class="map__list-item">
+              <p class="map__list-title">
+                <span class="map__list-number">3</span>
+                ビーチヨガ
+              </p>
+              <img
+                src="img/activity3.jpg"
+                class="map__list-image"
+                loading="lazy"
+                alt="海辺でヨガをする人たち"
+              />
+            </li>
+            <li class="map__list-item">
+              <p class="map__list-title">
+                <span class="map__list-number">4</span>
+                水上バイク
+              </p>
+              <img
+                src="img/activity4.jpg"
+                loading="lazy"
+                class="map__list-image"
+                alt="海を走る水上バイク"
+              />
+            </li>
+            <li class="map__list-item">
+              <p class="map__list-title">
+                <span class="map__list-number">5</span>
+                クルージング
+              </p>
+              <img
+                src="img/activity5.jpg"
+                class="map__list-image"
+                loading="lazy"
+                alt="クルーザーでのクルージング風景"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="map__wave map__wave--bottom">
+          <img src="img/wave-top-blue.png" alt="" />
+        </div>
+      </section>
+      <div class="bottom-img">
+        <img
+          src="img/bottom-img.jpg"
+          loading="lazy"
+          alt="自然に囲まれた休憩エリア"
+        />
+      </div>
+      <!-- 追従ボタン -->
+      <div class="fixed-btn">
+        <a href="#" class="fixed-btn__link">
+          <img
+            src="img/btn-reservation.svg"
+            alt="予約する"
+            class="fixed-btn__image"
+          />
+        </a>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__body">
+          <div class="footer__info">
+            <p class="footer__address">〒999-9999　沖縄県◯◯◯◯◯◯◯◯◯◯</p>
+            <p class="footer__tel">TEL：99-9999-9999</p>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="" class="footer__nav-link">海遊ツアーとは</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="" class="footer__nav-link">ツアー紹介</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="" class="footer__nav-link">アクティビティ</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="" class="footer__nav-link">マップ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__cta">
+          <a href="#" class="c-button c-button--footer">
+            <img src="img/icon-arrow.svg" alt="" class="c-button__icon" />
+            お問い合わせはこちら
+          </a>
+          <a href="#" class="c-button c-button--footer">
+            <img src="img/icon-arrow.svg" alt="" class="c-button__icon" />
+            ご予約はこちら
+          </a>
+        </div>
+      </div>
+      <p class="footer__copyright">
+        <small class="footer__copyright-text">
+          Copyright © KAIYU TOUR. All rights reserved.
+        </small>
+      </p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
